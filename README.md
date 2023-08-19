@@ -1,0 +1,1 @@
+Microserviço responsável por envio de emails
