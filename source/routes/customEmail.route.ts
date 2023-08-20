@@ -3,11 +3,12 @@ import 'dotenv/config'
 import nodemailer from "nodemailer";
 import * as response from '../responses/forgetPassword.response'
 import * as error from '../errors/forgetPassword.errors'
-import forgetPasswordMessage from '../constants/forgetPassword.constants.json'
 
-export const forgetPassword = express()
+export const customMessage = express()
 
-forgetPassword.post('/forget/password', async (req, res) => {
+customMessage.post('/custom/message', async (req, res) => {
+    const subject = req.body.subject
+    const html = req.body.message
     let transporter = nodemailer.createTransport({
         service: process.env.EMAIL_SERVICE,
         auth: {
@@ -18,8 +19,8 @@ forgetPassword.post('/forget/password', async (req, res) => {
     const mailOptions = {
         from: process.env.EMAIL_SENDER,
         to: req.body.email,
-        subject: forgetPasswordMessage.email.subject,
-        html: forgetPasswordMessage.email.body
+        subject: subject,
+        html: html
     };
     transporter.sendMail(mailOptions, (err, info) => {
         if(err){
