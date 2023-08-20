@@ -8,5 +8,25 @@
         "statusHttp": 500,
         "errorCode": "EC-002",
         "message": "Email customizado não pode ser enviado."
+    },
+    "confirmEmail": {
+        "statusHttp": 500,
+        "errorCode": "EC-003",
+        "message": "Confirmação de email não pode ser enviada."
+    },
+    "confirmRegister": {
+        "statusHttp": 500,
+        "errorCode": "EC-004",
+        "message": "Email de confirmação de regsitro no sistema não pode ser enviada."
+    },
+    "changePassword": {
+        "statusHttp": 500,
+        "errorCode": "EC-005",
+        "message": "Email de aviso de troca de senha no sistema não pode ser enviada."
+    },
+    "changeEmail": {
+        "statusHttp": 500,
+        "errorCode": "EC-006",
+        "message": "Email de aviso de troca de email no sistema não pode ser enviada."
     }
 }

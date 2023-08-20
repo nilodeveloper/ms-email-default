@@ -1,0 +1,16 @@
+{
+    "email": {
+        "subject": "Assunto confirmEmail",
+        "body": "Olá!! aqui vem o corpo da mensagem do confirmEmail"
+    },
+    "response":{
+        "success": {
+            "statusHttp": 200,
+            "message": "confirmEmail mensage success here!"
+        }
+    },
+    "errors":{
+        "statusHttp": 500,
+        "message": "confirmEmail mensage error here!"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "email": {
+        "subject": "Assunto changeEmail",
+        "body": "Olá!! aqui vem o corpo da mensagem do changeEmail"
+    },
+    "response":{
+        "success": {
+            "statusHttp": 200,
+            "message": "changeEmail mensage success here!"
+        }
+    },
+    "errors":{
+        "statusHttp": 500,
+        "message": "changeEmail mensage error here!"
+    }
+}

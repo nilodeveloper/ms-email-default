@@ -1,7 +1,7 @@
-import constants from '../constants/forgetPassword.constants.json'
+import constants from '../constants/confirmRegister.constants.json'
 import Response from '../interfaces/response.interface' 
 
-export function forgetPasswordSuccess(data: any): Response{
+export function confirmRegister(data: any): Response{
     return {
         data,
         statusHttp: constants.response.success.statusHttp,

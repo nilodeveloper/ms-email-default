@@ -23,7 +23,7 @@ forgetPassword.post('/forget/password', async (req, res) => {
     };
     transporter.sendMail(mailOptions, (err, info) => {
         if(err){
-          res.send(error.forgetPassword(err))
+          res.status(500).send(error.forgetPassword(err))
         }else{
           console.log("INFO", info);
           res.send(response.forgetPasswordSuccess(null))
