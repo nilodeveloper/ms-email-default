@@ -1,6 +1,6 @@
 {
     "email": {
-        "subject": "MS-EMAIL-DEFAULT - Troca de Email",
+        "subject": "APP NAME - Troca de Email",
         "body": "Você trocou de email no nosso sistema. Agora você loga em nosso sistema a partir deste email."
     },
     "response":{
