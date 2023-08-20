@@ -1,7 +1,8 @@
 import express from 'express';
 import 'dotenv/config'
 import nodemailer from "nodemailer";
-import * as response from '../responses/forgetEmail.response'
+import * as response from '../responses/forgetPassword.response'
+import * as error from '../errors/forgetPassword.errors'
 import forgetPasswordMessage from '../constants/forgetPassword.constants.json'
 
 export const forgetPassword = express()
@@ -28,10 +29,10 @@ forgetPassword.post('/forget/password', async (req, res) => {
     };
     transporter.sendMail(mailOptions, (err, info) => {
         if(err){
-          console.log(err);
+          res.send(error.forgetPassword(err))
         }else{
           console.log("INFO", info);
-          res.send(response.forgetPasswordSuccess())
+          res.send(response.forgetPasswordSuccess(null))
         }
      });
 });

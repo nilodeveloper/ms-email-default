@@ -1,0 +1,7 @@
+{
+    "forgetPassword": {
+        "statusHttp": 200,
+        "errorCode": 1,
+        "message": "Não foi possível enviar o email para recuperação de sua senha."
+    }
+}
