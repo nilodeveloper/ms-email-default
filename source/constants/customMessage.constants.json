@@ -1,0 +1,12 @@
+{
+    "response":{
+        "success": {
+            "statusHttp": 200,
+            "message": "Envio de email personalizado realizado com sucesso!"
+        }
+    },
+    "errors":{
+        "statusHttp": 500,
+        "message": "Não foi possível enviar o email personalizado para o usuário. Entre em contato com o administrador"
+    }
+}

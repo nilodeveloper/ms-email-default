@@ -1,7 +1,7 @@
 import express from 'express';
 import 'dotenv/config'
 import nodemailer from "nodemailer";
-import * as response from '../responses/forgetPassword.response'
+import * as response from '../responses/customMessage.response'
 import * as error from '../errors/forgetPassword.errors'
 
 export const customMessage = express()
@@ -27,7 +27,7 @@ customMessage.post('/custom/message', async (req, res) => {
           res.send(error.forgetPassword(err))
         }else{
           console.log("INFO", info);
-          res.send(response.forgetPasswordSuccess(null))
+          res.send(response.customMessageSuccess(null))
         }
      });
 });
