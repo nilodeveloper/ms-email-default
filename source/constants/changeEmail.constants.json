@@ -1,16 +1,16 @@
 {
     "email": {
-        "subject": "Assunto changeEmail",
-        "body": "Olá!! aqui vem o corpo da mensagem do changeEmail"
+        "subject": "MS-EMAIL-DEFAULT - Troca de Email",
+        "body": "Você trocou de email no nosso sistema. Agora você loga em nosso sistema a partir deste email."
     },
     "response":{
         "success": {
             "statusHttp": 200,
-            "message": "changeEmail mensage success here!"
+            "message": "Envio de confirmação de troca de email enviado com sucesso!"
         }
     },
     "errors":{
         "statusHttp": 500,
-        "message": "changeEmail mensage error here!"
+        "message": "Houve falha no envia de email de confirmação da troca de email."
     }
 }
