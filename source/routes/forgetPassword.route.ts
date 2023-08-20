@@ -2,7 +2,7 @@ import express from 'express';
 import 'dotenv/config'
 import nodemailer from "nodemailer";
 import * as response from '../responses/forgetPassword.response'
-import * as error from '../errors/forgetPassword.errors'
+import * as error from '../errors/forgetPassword.error'
 import forgetPasswordMessage from '../constants/forgetPassword.constants.json'
 
 export const forgetPassword = express()

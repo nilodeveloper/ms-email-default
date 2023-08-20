@@ -2,7 +2,7 @@ import express from 'express';
 import 'dotenv/config'
 import nodemailer from "nodemailer";
 import * as response from '../responses/customMessage.response'
-import * as error from '../errors/forgetPassword.errors'
+import * as error from '../errors/customMessage.error'
 
 export const customMessage = express()
 
@@ -24,7 +24,7 @@ customMessage.post('/custom/message', async (req, res) => {
     };
     transporter.sendMail(mailOptions, (err, info) => {
         if(err){
-          res.send(error.forgetPassword(err))
+          res.send(error.customMessage(err))
         }else{
           console.log("INFO", info);
           res.send(response.customMessageSuccess(null))

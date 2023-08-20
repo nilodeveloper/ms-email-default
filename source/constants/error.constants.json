@@ -1,7 +1,12 @@
 {
     "forgetPassword": {
-        "statusHttp": 200,
-        "errorCode": 1,
+        "statusHttp": 500,
+        "errorCode": "EC-001",
         "message": "Não foi possível enviar o email para recuperação de sua senha."
+    },
+    "customMessage": {
+        "statusHttp": 500,
+        "errorCode": "EC-002",
+        "message": "Email customizado não pode ser enviado."
     }
 }

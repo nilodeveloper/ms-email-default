@@ -1,5 +1,5 @@
 export default interface Error{
     statusHttp: Number,
-    errorCode: Number,
+    errorCode: string,
     message: string
 }

@@ -1,4 +1,4 @@
-import message from '../constants/forgetPassword.constants.json'
+import message from '../constants/customMessage.constants.json'
 import Response from '../interfaces/response.interface' 
 
 export function customMessageSuccess(data: any): Response{
